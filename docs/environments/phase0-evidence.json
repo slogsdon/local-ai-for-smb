@@ -1,0 +1,38 @@
+{
+  "observed_date": "2026-09-16",
+  "hardware": {
+    "model": "Mac16,10",
+    "processor": "Apple M4",
+    "memory_bytes": 34359738368,
+    "macos": "26.6.2",
+    "build": "25G83"
+  },
+  "local_weights": {
+    "hf_repository": "ggml-org/gemma-3-4b-it-GGUF",
+    "hf_revision": "d0976223747697cb51e056d85c532013931fe52e",
+    "filename": "gemma-3-4b-it-Q4_K_M.gguf",
+    "sha256": "882e8d2db44dc554fb0ea5077cb7e4bc49e7342a1f0da57901c0802ea21a0863"
+  },
+  "run_supplements": {
+    "20260916T212250Z-lemonade-f0504f31": {
+      "runtime": "Lemonade",
+      "runtime_version": "11.9.0",
+      "backend": "llama.cpp Metal",
+      "backend_version": "b10723",
+      "configured_context": 4096,
+      "preloaded": true,
+      "evidence": "Server load log: Using LlamaCpp Backend: metal; Installing llama-server (version: b10723); n_ctx_slot = 4096"
+    },
+    "20260916T213029Z-ollama-078840c7": {
+      "runtime": "Ollama",
+      "runtime_version": "0.34.0",
+      "backend": "Metal",
+      "backend_version": null,
+      "configured_context": 4096,
+      "model_manifest_digest": "cef7514d3f7ca67581eef0c8dd9e756e5d2ed00722d65a70f2a50fefed3763f3",
+      "reported_size_vram_bytes": 2758625197,
+      "evidence": "Ollama startup log: library=Metal description=Apple M4; /api/ps: context_length=4096, size_vram=2758625197"
+    }
+  },
+  "notes": "Post-run supplemental observations. Original manifests and raw responses were not rewritten. Remote backend and hardware remain unknown."
+}

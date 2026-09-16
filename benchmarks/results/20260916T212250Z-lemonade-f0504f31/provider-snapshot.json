@@ -1,0 +1,33 @@
+{
+  "/models": {
+    "data": [
+      {
+        "checkpoint": "ggml-org/gemma-3-4b-it-GGUF:Q4_K_M",
+        "checkpoints": {
+          "main": "ggml-org/gemma-3-4b-it-GGUF:Q4_K_M",
+          "mmproj": "ggml-org/gemma-3-4b-it-GGUF:mmproj-model-f16.gguf"
+        },
+        "components": [],
+        "context_length": 4096,
+        "created": 1234567890,
+        "downloaded": true,
+        "id": "Gemma-3-4b-it-GGUF",
+        "labels": [
+          "chat",
+          "vision"
+        ],
+        "max_context_window": 131072,
+        "object": "model",
+        "owned_by": "lemonade",
+        "recipe": "llamacpp",
+        "recipe_options": {},
+        "registry_source": "huggingface",
+        "size": 3.11,
+        "source": "huggingface",
+        "suggested": true,
+        "update_available": false
+      }
+    ],
+    "object": "list"
+  }
+}

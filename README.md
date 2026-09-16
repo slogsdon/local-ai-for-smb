@@ -22,24 +22,24 @@ The goal is to identify where local, cloud, and hybrid AI architectures each mak
 
 ## Project Status
 
-Status: Planning / Pre-research
+Status: Phase 0 experimental foundation implemented; independent human review pending.
 
-This repository currently documents the intended research program.
+A fixed-context synthetic SMB knowledge-assistant benchmark now runs through Ollama, Lemonade and hosted NVIDIA NIM. Recorded results include format failures, unsupported answers and API errors. These are application integration findings, not hardware rankings or economic conclusions.
 
-Hardware, models, software, benchmarks, and reference implementations have not yet been selected or evaluated. The project will evolve as appropriate research hardware and resources become available.
+- [Research plan](RESEARCH_PLAN.md)
+- [Reproduce an experiment](docs/methodology/phase0.md)
+- [Phase 0 findings and limitations](docs/findings/phase0.md)
+- [Environment](docs/environments/apple-m4.md)
+- Provider setup: [Ollama](providers/ollama/README.md), [Lemonade](providers/lemonade/README.md), [NVIDIA NIM](providers/nvidia-nim/README.md)
+- [Editable cost assumptions](benchmarks/cost/assumptions.json)
 
-No performance, cost, or capability claims should be inferred from the proposed experiments described here.
+```sh
+python3 -B -m unittest discover -s tools/benchmark-harness -p 'test_*.py'
+python3 -B tools/benchmark-harness/run.py --help
+python3 -B tools/benchmark-harness/analyze.py
+```
 
-Initial work will focus on defining:
-
-* representative SMB workloads;
-* reproducible evaluation methodology;
-* baseline cloud implementations;
-* candidate local models and runtimes;
-* benchmarking and observability tooling; and
-* hardware requirements for meaningful local inference testing.
-
-Research artifacts will be added to this repository as experiments are completed.
+Python standard library only. Configure a provider before running; the methodology explains manifests, exact inputs, raw responses and the review rubric. Full retrieval and additional hardware experiments remain future work.
 
 ## Research Thesis
 
@@ -436,4 +436,4 @@ The answer should instead be supported by architectures, measurements, source co
 
 This is an independent, exploratory research project focused on practical AI adoption for small and midsize businesses.
 
-The project is currently in the planning stage. Technologies, models, hardware platforms, research partners, and implementation details will evolve as experiments begin.
+The project has an initial experimental foundation. Technologies, models, hardware platforms and implementation details will evolve as further experiments are completed.

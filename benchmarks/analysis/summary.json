@@ -1,0 +1,52 @@
+[
+  {
+    "run_id": "20260916T211945Z-nvidia-nim-71fa1e24",
+    "model": "google/gemma-3-4b-it",
+    "requests": 16,
+    "failures": 16,
+    "strict_json_valid": 0,
+    "status_matches": 0,
+    "median_success_response_seconds": null,
+    "human_reviewed": 0
+  },
+  {
+    "run_id": "20260916T212059Z-nvidia-nim-6339d1c9",
+    "model": "deepseek-ai/deepseek-v4-flash-0731",
+    "requests": 1,
+    "failures": 0,
+    "strict_json_valid": 1,
+    "status_matches": 1,
+    "median_success_response_seconds": 16.081263542,
+    "human_reviewed": 0
+  },
+  {
+    "run_id": "20260916T212250Z-lemonade-f0504f31",
+    "model": "Gemma-3-4b-it-GGUF",
+    "requests": 16,
+    "failures": 0,
+    "strict_json_valid": 0,
+    "status_matches": 0,
+    "median_success_response_seconds": 5.959970104000002,
+    "human_reviewed": 0
+  },
+  {
+    "run_id": "20260916T212623Z-nvidia-nim-01c122de",
+    "model": "deepseek-ai/deepseek-v4-flash-0731",
+    "requests": 16,
+    "failures": 1,
+    "strict_json_valid": 15,
+    "status_matches": 12,
+    "median_success_response_seconds": 20.553609499999993,
+    "human_reviewed": 0
+  },
+  {
+    "run_id": "20260916T213029Z-ollama-078840c7",
+    "model": "phase0-gemma3:4b-q4km",
+    "requests": 16,
+    "failures": 0,
+    "strict_json_valid": 0,
+    "status_matches": 0,
+    "median_success_response_seconds": 6.354641479000001,
+    "human_reviewed": 0
+  }
+]

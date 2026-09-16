@@ -1,0 +1,69 @@
+{
+  "run_id": "20260916T213029Z-ollama-078840c7",
+  "timestamp": "2026-09-16T21:30:29.529246+00:00",
+  "git_commit": "c1f406c3548b63c242cc6cee6c900840f281b64c",
+  "git_dirty": true,
+  "source_sha256": {
+    "evaluation.py": "5b975c65f265aa365257b795435ffb3b2aa967b3bff76404b947f21b1be4e7da",
+    "providers.py": "44b4650c4dbaf5eec056ec0021398890420835427031b83c76c4c68289badebf",
+    "run.py": "b10d38341b4d4a8520048d5b6eebb2d2ae5adfff936100d043fe7ae9dc3233a3",
+    "test_harness.py": "3d8054c6ea1b2f6f5aeb2225d1fc472ab757299cdede8a3bcdeed102d5a8c8fe"
+  },
+  "provider": "ollama",
+  "runtime": "ollama",
+  "runtime_version": "0.34.0",
+  "model": "phase0-gemma3:4b-q4km",
+  "model_family": "gemma-3",
+  "parameter_count": "3.9B",
+  "model_version": "cef7514d3f7ca67581eef0c8dd9e756e5d2ed00722d65a70f2a50fefed3763f3",
+  "quantization": "Q4_K_M",
+  "context_limit": 131072,
+  "configured_context": 4096,
+  "temperature": 0,
+  "max_tokens": 512,
+  "seed_if_supported": null,
+  "streaming": false,
+  "client_environment": {
+    "host_os": "macOS-26.6.2-arm64-arm-64bit",
+    "host_architecture": "arm64",
+    "host_memory": "34359738368",
+    "hardware": "Apple M4"
+  },
+  "inference_environment": {
+    "host_os": "macOS-26.6.2-arm64-arm-64bit",
+    "host_architecture": "arm64",
+    "host_memory": "34359738368",
+    "hardware": "Apple M4"
+  },
+  "backend": null,
+  "local_or_remote": "local",
+  "benchmark_version": "0.1.0",
+  "dataset_version": "1.0.0",
+  "dataset_sha256": {
+    "corpus.json": "54a09c3772386128a01d8a9b6eaaeb65157725930095395a4e49003e2fa9284b",
+    "cases.json": "5a649176fb4dd052b8d621e06d78b477901d37ffde2792de427175ff97c16b1c",
+    "system.txt": "809a7d8435b4b50d04724670f5606aaf8090a70e9a0c7c9cdaadd0fcf6169af2"
+  },
+  "endpoint": "http://127.0.0.1:11434",
+  "test_ids": [
+    "meal-limit",
+    "expense-flow",
+    "premium-incident",
+    "support-ambiguity",
+    "contractor-meals",
+    "revenue-trap",
+    "resolution-trap",
+    "external-ai"
+  ],
+  "repetitions": 2,
+  "warmup": "none; residency uncontrolled; first call may include load",
+  "retrieval": "none; full fixed corpus in original order",
+  "status": "completed",
+  "measurement_units": {
+    "total_time": "seconds",
+    "time_to_first_token": "seconds",
+    "native_metrics": "Ollama nanoseconds"
+  },
+  "request_count": 16,
+  "failure_count": 0
+}
