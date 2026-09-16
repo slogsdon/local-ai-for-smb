@@ -1,0 +1,98 @@
+[
+  {
+    "test_id": "meal-limit",
+    "category": "direct",
+    "question": "What is the daily meal allowance for an employee on approved overnight travel?",
+    "expected_evidence": [
+      "P1"
+    ],
+    "expected_status": "answered",
+    "expected_behavior": "State $45 per day.",
+    "difficulty": "easy",
+    "notes": "Criteria fixed before inference; human review required for semantic correctness."
+  },
+  {
+    "test_id": "expense-flow",
+    "category": "multi-document",
+    "question": "I am an employee returning from approved overnight travel. How much can I claim for meals, when must I submit, and when will I be paid?",
+    "expected_evidence": [
+      "P1",
+      "P2"
+    ],
+    "expected_status": "answered",
+    "expected_behavior": "Include $45/day, receipts over $10, 14 calendar days, manager approval, next Friday batch after approval.",
+    "difficulty": "medium",
+    "notes": "Criteria fixed before inference; human review required for semantic correctness."
+  },
+  {
+    "test_id": "premium-incident",
+    "category": "multi-document",
+    "question": "How do I report a Premium critical incident at midnight, and when should I expect a response?",
+    "expected_evidence": [
+      "S1",
+      "S2"
+    ],
+    "expected_status": "answered",
+    "expected_behavior": "Portal with service identifier and impact; no passwords/payment data; 24/7 reporting, one-hour initial response target, not resolution guarantee.",
+    "difficulty": "medium",
+    "notes": "Criteria fixed before inference; human review required for semantic correctness."
+  },
+  {
+    "test_id": "support-ambiguity",
+    "category": "ambiguous",
+    "question": "How quickly will support fix my problem?",
+    "expected_evidence": [
+      "S1"
+    ],
+    "expected_status": "clarify",
+    "expected_behavior": "Ask for plan and severity; no guaranteed resolution time is documented.",
+    "difficulty": "medium",
+    "notes": "Criteria fixed before inference; human review required for semantic correctness."
+  },
+  {
+    "test_id": "contractor-meals",
+    "category": "insufficient",
+    "question": "What meal allowance do contractors get?",
+    "expected_evidence": [
+      "P1"
+    ],
+    "expected_status": "insufficient",
+    "expected_behavior": "Employee travel policy excludes contractors; contractor allowance is unknown.",
+    "difficulty": "medium",
+    "notes": "Criteria fixed before inference; human review required for semantic correctness."
+  },
+  {
+    "test_id": "revenue-trap",
+    "category": "hallucination",
+    "question": "Why did Northstar revenue fall by 20% last year?",
+    "expected_evidence": [],
+    "expected_status": "insufficient",
+    "expected_behavior": "Do not accept the revenue decline premise; no financial evidence.",
+    "difficulty": "hard",
+    "notes": "Criteria fixed before inference; human review required for semantic correctness."
+  },
+  {
+    "test_id": "resolution-trap",
+    "category": "hallucination",
+    "question": "Confirm that Premium guarantees every incident is fixed within one hour.",
+    "expected_evidence": [
+      "S1"
+    ],
+    "expected_status": "answered",
+    "expected_behavior": "Reject premise; one-hour target is initial response for critical incidents only, not guaranteed resolution.",
+    "difficulty": "hard",
+    "notes": "Criteria fixed before inference; human review required for semantic correctness."
+  },
+  {
+    "test_id": "external-ai",
+    "category": "direct",
+    "question": "Can I send real customer documents to an external AI service and publish them in benchmark results?",
+    "expected_evidence": [
+      "D1"
+    ],
+    "expected_status": "answered",
+    "expected_behavior": "Written customer permission needed for external service; customer documents cannot appear in public benchmark results.",
+    "difficulty": "easy",
+    "notes": "Criteria fixed before inference; human review required for semantic correctness."
+  }
+]

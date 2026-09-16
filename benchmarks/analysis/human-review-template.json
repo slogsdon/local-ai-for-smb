@@ -1,0 +1,15 @@
+{
+  "run_id": null,
+  "test_id": null,
+  "repetition": null,
+  "reviewer": null,
+  "reviewer_type": "human",
+  "scores": {
+    "grounding": null,
+    "completeness": null,
+    "instruction_following": null,
+    "hallucination_avoidance": null,
+    "practical_usefulness": null
+  },
+  "rationale": null
+}

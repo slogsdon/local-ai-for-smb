@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "currency": "USD",
+  "scenario": "hybrid",
+  "period_months": null,
+  "local": {
+    "hardware_acquisition": null,
+    "useful_lifetime_months": null,
+    "residual_value": null,
+    "average_watts": null,
+    "hours_per_month": null,
+    "electricity_per_kwh": null,
+    "utilization_fraction": null,
+    "maintenance_per_month": null,
+    "administration_hours_per_month": null,
+    "administration_hourly_cost": null,
+    "supporting_infrastructure_per_month": null
+  },
+  "cloud": {
+    "input_tokens_per_month": null,
+    "output_tokens_per_month": null,
+    "price_per_million_input_tokens": null,
+    "price_per_million_output_tokens": null,
+    "requests_per_month": null,
+    "price_per_request": null,
+    "platform_per_month": null,
+    "network_per_month": null,
+    "supporting_infrastructure_per_month": null
+  },
+  "network_dependency": {
+    "availability_assumption": null,
+    "outage_business_cost_per_hour": null
+  },
+  "notes": "All null values mean unknown, never zero. No break-even claim. Avoid double-counting shared hybrid infrastructure."
+}
